@@ -3,7 +3,7 @@ import csv
 import json
 
 def search_pokemon(poke_name):
-    with open('data/csv/pokemon.csv', 'r') as file:
+    with open('csv/pokemon.csv', 'r') as file:
         csv_reader = csv.DictReader(file)
         #headers = next(csv_reader)# Read the CSV headers
 
@@ -20,7 +20,7 @@ def search_pokemon(poke_name):
     return None  # Return None if the Pokémon name is not found
 
 def pokemon_moves(poke_id):
-  with open('data/csv/pokemon_moves.csv', 'r') as file:
+  with open('csv/pokemon_moves.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     #headers = next(csv_reader)
     moves=[]# Read the CSV headers
@@ -39,7 +39,7 @@ def pokemon_moves(poke_id):
     return gg
 
 def moves(id):
-  with open('data/csv/moves.csv', 'r') as file:
+  with open('csv/moves.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     #headers = next(csv_reader)
     #moves=[]# Read the CSV headers
@@ -57,7 +57,7 @@ def moves(id):
     
     return None
 def move_effect(id):
-  with open('data/csv/move_effect_prose.csv', 'r') as file:
+  with open('csv/move_effect_prose.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     #headers = next(csv_reader)
     #moves=[]# Read the CSV headers
@@ -70,7 +70,7 @@ def move_effect(id):
 
 
 def evolution(id):
-  with open('data/csv/evolution.csv', 'r') as file:
+  with open('csv/evolution.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     #headers = next(csv_reader)
     #moves=[]# Read the CSV headers
@@ -82,7 +82,7 @@ def evolution(id):
           return json_data
 
 def item(id):
-  with open('data/csv/items.csv', 'r') as file:
+  with open('csv/items.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     ##headers = next(csv_reader)
     #moves=[]# Read the CSV headers
